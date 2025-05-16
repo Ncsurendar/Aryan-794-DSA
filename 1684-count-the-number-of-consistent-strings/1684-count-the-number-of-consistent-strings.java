@@ -1,9 +1,9 @@
 class Solution {
     public int countConsistentStrings(String allowed, String[] words) {
-        HashSet<Character> set = new HashSet<>();
+        boolean[] allowedChars = new boolean[26];
         for(char ch : allowed.toCharArray())
         {
-            set.add(ch);
+            allowedChars[ch - 'a'] = true;
         }
 
         int count = 0;
@@ -12,14 +12,14 @@ class Solution {
             boolean isConsistent = true;
             for(char ch : word.toCharArray())
             {
-                if(!set.contains(ch))
+                if(!allowedChars[ch - 'a'])
                 {
                     isConsistent = false;
                     break;
                 }
             }
 
-            if(isConsistent) count += 1;
+            if(isConsistent) count++;
         }
 
         return count;
