@@ -1,2 +1,5 @@
-# Aryan-794-DSA
-Contains Aryan's 794 problems DSA sheet for practice
+# DSA Sheet
+Contains Aryan Sheet DSA, along with Striver TUF DSA Sheet problems
+Covers most important problems asked in interviews.
+
+***This Repo is Used for practice and upskilling yourself in DSA***
